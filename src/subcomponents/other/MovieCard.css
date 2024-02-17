@@ -59,8 +59,8 @@
 
 @media screen and (max-width: 650px) {
     .app__card{
-        min-width: 225px;
-        height: 350px;
+        min-width: 200px;
+        height: 300px;
     }
 
     .app__card-info h3 {
@@ -73,6 +73,28 @@
     }
 
     .app__card:hover .app__card-info {
-        top: -355px;
+        top: -305px;
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+    .app__card{
+        min-width: 170px;
+        height: 250px;
+    }
+
+    .app__card-info h3 {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .app__card-info p {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .app__card:hover .app__card-info {
+        top: -255px;
     }
 }

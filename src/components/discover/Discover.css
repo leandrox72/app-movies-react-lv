@@ -45,7 +45,12 @@
 
 @media screen and (max-width: 650px) {
     .app__discover-row {
-        height: 400px;
+        height: 350px;
     }
+}
 
+@media screen and (max-width: 450px) {
+    .app__discover-row {
+        height: 300px;
+    }
 }
