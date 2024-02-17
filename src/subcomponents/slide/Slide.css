@@ -1,0 +1,17 @@
+.app__slide {
+    height: 400px;
+    overflow: auto;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.app__slide::-webkit-scrollbar {
+    height: 3px;             
+    background: #aaa;            
+}
+
+.app__slide::-webkit-scrollbar-thumb:horizontal{
+    background: #111;
+}

@@ -1,0 +1,44 @@
+.app__footer {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 500;
+    background: #050505;
+}
+
+.app__footer p {
+    font-size: 18px;
+    text-transform: lowercase;
+    margin-bottom: 30px;
+    color: #ccc;
+    font-family: 'Kanit', sans-serif;
+}
+
+.divisor {
+    width: 30%;
+    border-top: 1px solid #ccc;
+    margin-bottom: 30px;
+}
+
+.app__footer-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-icon {
+    margin: 10px;
+    height: 25px;
+    width: 25px;
+    color: #ccc;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.info-icon:hover {
+    filter: brightness(80%);
+} 

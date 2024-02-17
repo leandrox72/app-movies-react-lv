@@ -1,0 +1,121 @@
+.app__presentation {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    filter: blur(10px) brightness(50%);
+    z-index: 0;
+    -webkit-user-select: none;
+    user-select: none;
+    width: 100%;
+}
+
+.app__presentation-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.app__presentation-content img {
+    z-index: 300;
+    max-width: 250px;
+    box-shadow: 10px 10px 15px #000;
+    margin-right: 2rem;
+    max-height: 375px;
+}
+
+.app__presentation-info {
+    z-index: 300;
+}
+
+.app__presentation-info h2 {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    line-height: 40px;
+    transition: 0.5s ease;
+}
+
+.app__presentation-info p {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 300;
+    color: #ccc;
+    max-width: 450px;
+    margin-bottom: 10px;
+    transition: 0.5s ease;
+}
+
+.app__presentation-info button,
+.app__presentation-info button:first-child:hover {
+    outline: none;
+    margin-right: 10px;
+    background: transparent;
+    color: #fff;
+    font-family: 'Kanit', sans-serif;
+    border: 2px solid #fff;
+    padding: 8px 30px;
+    font-size: 14px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.25s ease;
+}
+
+.app__presentation-info button:hover,
+.app__presentation-info button:first-child {
+    border: 2px solid #fff;
+    background: #fff;
+    color: #111;
+}
+
+.app__presentation-info button:hover {
+    box-shadow: 5px 5px 10px #000;
+}
+
+.app__presentation-info .divisor {
+    max-width: 700px;
+    width: 100%;
+    border-top: 1px solid #fff;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width:850px) {
+    
+    .app__presentation-content{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .app__presentation-info h2 {
+        font-size: 30px;
+    }
+
+    .app__presentation-info p {
+        font-size: 15px;
+    }
+
+    .app__presentation-content img {
+        max-width: 220px;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .app__presentation-content img {
+        max-width: 180px;
+    }
+
+    .app__presentation-info p {
+        font-size: 14px;
+    }
+}

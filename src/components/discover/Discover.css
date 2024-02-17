@@ -1,0 +1,51 @@
+.app__discover {
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(17,17,17,1) 50%, rgba(0,0,0,0) 100%);
+    position: relative;
+}
+
+.app__discover h2 {
+    font-family: 'Poiret One', sans-serif;
+    color: #fff;
+    text-transform: lowercase;
+    font-size: 35px;
+}
+
+.app__discover-row {
+    height: 500px;
+    overflow: auto;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.app__discover-row::-webkit-scrollbar {
+    height: 6px;             
+    background: #aaa;
+    cursor: pointer;            
+}
+
+.app__discover-row::-webkit-scrollbar-thumb:horizontal{
+    background: #222;
+}
+
+.app__discover-row .movies {
+    max-width: 220px;
+    margin-right: 10px;
+    box-shadow: 5px 5px 10px #000;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.app__discover-row .movies:hover {
+    filter: brightness(50%);
+}
+
+@media screen and (max-width: 650px) {
+    .app__discover-row {
+        height: 400px;
+    }
+
+}

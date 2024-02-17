@@ -1,0 +1,78 @@
+.app__card {
+    min-width: 275px;
+    height: 420px;
+    margin-right: 10px;
+    box-shadow: 5px 5px 10px #000;
+    cursor: pointer;
+    overflow: hidden;
+    
+}
+
+.app__card-img {
+    width: 100%;
+    height: 100%;
+    transition: 0.5s ease;
+}
+
+.app__card:hover .app__card-img {
+    filter: brightness(50%);
+}
+
+.app__card-info {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background: #0000003b;
+    backdrop-filter: blur(5px);
+    color: #fff;
+    padding: 20px;
+    font-family: 'Kanit', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: 0.5s ease;
+}
+
+.app__card:hover .app__card-info {
+    top: -425px;
+}
+
+
+.app__card-info h3 {
+    text-transform: uppercase;
+    font-size: 18px;
+    width: fit-content;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-wrap: wrap;
+    line-height: 20px;
+}
+
+.app__card-info p {
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 300;
+    text-wrap: wrap;
+    line-height: 18px;
+    color: #ccc;
+}
+
+@media screen and (max-width: 650px) {
+    .app__card{
+        min-width: 225px;
+        height: 350px;
+    }
+
+    .app__card-info h3 {
+        margin-bottom: 10px;
+    }
+
+    .app__card-info p {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .app__card:hover .app__card-info {
+        top: -355px;
+    }
+}

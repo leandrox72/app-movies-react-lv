@@ -1,0 +1,89 @@
+.app__navbar {
+    width: 100%;
+    display: flex;
+    padding: 1rem 4rem;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background: transparent;
+    z-index: 500;
+    transition: 0.5s ease;
+}
+
+a {
+    text-decoration: none;
+}
+
+.colorChange {
+    background: #111;
+}
+
+.app__nabvar-trigger {
+    color: #ccc;
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.app__navbar h2 {
+    font-family: 'Poiret One', sans-serif;
+    text-transform: lowercase;
+    color: #fff;
+    padding-bottom: 5px;
+}
+
+.app__navbar-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app__navbar-search input {
+    background: transparent;
+    width: 250px;
+    border: 2px solid #aaa;
+    outline: none;
+    border-radius: 25px;
+    padding: 3px 10px;
+    color: #ccc;
+    margin-right: 15px;
+    font-family: 'Kanit', sans-serif;
+    transition: 0.5s ease;
+}
+
+.app__navbar-search input:focus {
+    border-color: #fff;
+}
+
+.app__navbar-icon {
+    color: #aaa;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    transition: 0.25s ease;
+}
+
+.app__navbar-icon:hover {
+    color: #fff;
+}
+
+@media screen and (max-width: 650px) {
+    .app__navbar h2  {
+        display: none;
+    }
+
+    .app__navbar {
+        justify-content: center;
+    }
+
+    .app__navbar-search input {
+        width: 220px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .app__navbar {
+        padding: 1rem 2rem;
+    }
+}
