@@ -64,7 +64,19 @@
     font-weight: 200;
 }
 
+
+@media screen and (max-width: 850px) {
+    .app__player-container {
+        height: 55vh;
+    }
+}
+
 @media screen and (max-width: 650px) {
+    
+    .app__player-container {
+        margin-top: 4rem;
+    }
+
     .app__player-data img {
         display: none;
     }
@@ -72,6 +84,26 @@
     .app__player-data {
         height: 400px;
     }
+}
 
-    
+@media screen and (max-width: 450px) {
+    .app__player-container {
+        height: 35vh;
+    }
+
+    .app__player-data {
+        height: 600px;
+    }
+
+    .app__player-data h2 {
+        font-size: 16px;
+    }
+
+    .app__player-data h3 {
+        font-size: 20px;
+    }
+
+    .app__player-data p {
+        font-size: 14px;
+    }
 }
