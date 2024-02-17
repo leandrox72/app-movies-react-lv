@@ -28,6 +28,7 @@
     width: 100%;
     display: flex;
     font-family: 'Kanit', sans-serif;
+    align-items: center;
 }
 
 .app__player-data img {
@@ -60,8 +61,13 @@
 
 .app__player-data p {
     font-size: 16px;
-    color: #777;
+    color: #ccc;
     font-weight: 200;
+    margin-bottom: 10px;
+}
+
+.app__player-data p:last-child {
+    color: #777;
 }
 
 
@@ -80,19 +86,11 @@
     .app__player-data img {
         display: none;
     }
-
-    .app__player-data {
-        height: 400px;
-    }
 }
 
 @media screen and (max-width: 450px) {
     .app__player-container {
         height: 35vh;
-    }
-
-    .app__player-data {
-        height: 600px;
     }
 
     .app__player-data h2 {

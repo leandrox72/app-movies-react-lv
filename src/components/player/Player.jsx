@@ -57,6 +57,7 @@ const Player = ({ movieId }) => {
           <h2><span>{movie.title}</span> | ★ {movie.vote_average}</h2>
           <h3>Playing | {video.name}</h3>
           <p>Release Date | {movie.release_date}</p>
+          <p>{movie.overview}</p>
         </div>
       </div>
     </div>
