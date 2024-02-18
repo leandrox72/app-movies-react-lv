@@ -47,6 +47,10 @@
     .app__discover-row {
         height: 350px;
     }
+
+    .app__discover-row::-webkit-scrollbar {
+        height: 2px;
+    }
 }
 
 @media screen and (max-width: 450px) {

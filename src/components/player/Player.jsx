@@ -11,8 +11,12 @@ const Player = ({ movieId }) => {
   const getMovieTrailer = async () => {
     const response = await fetch(`https://api.themoviedb.org/3/movie/${movieId}/videos?api_key=${API_KEY}`)
     const data = await response.json()
-    setVideo(data.results[0])
-    console.log(data.results)
+    if (data.results) {
+      const trailer = data.results.find(movie=> {
+        return movie.type === "Trailer"  
+      })
+      setVideo(trailer)
+    }
   }
 
   const getMovie = async () => {
@@ -20,7 +24,6 @@ const Player = ({ movieId }) => {
         const response = await fetch(`https://api.themoviedb.org/3/movie/${movieId}?&api_key=${API_KEY}`)
         const data = await response.json()
         setMovie(data)
-        console.log(data)
     }
     catch(error) {
         console.error('A ocurrido un error: ', error)

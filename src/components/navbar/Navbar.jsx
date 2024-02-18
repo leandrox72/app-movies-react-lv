@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
 
     const [ color, setColor ] = useState(false)
+    
     const changeColor = () => {
         if(window.scrollY >= 50) {
             setColor(true)
@@ -21,10 +22,7 @@ const Navbar = () => {
     return (
       <div className={color ? 'app__navbar colorChange' : 'app__navbar'}>
         <Link to={'/'}><h2>Movie Center 🍿</h2></Link>
-        <form className='app__navbar-search'>
-          <input type='text'/>
-          <FaSearch className='app__navbar-icon' />
-        </form>
+        <Link to={'/search'}><FaSearch className='app__navbar-icon' type='submit' /></Link>
       </div>
   )
 }

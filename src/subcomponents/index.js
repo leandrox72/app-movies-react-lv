@@ -1,7 +1,9 @@
 import Slide from "./slide/Slide";
-import MovieCard from "./other/MovieCard";
+import MovieCard from "./movieCard/MovieCard";
+import MovieCardSearch from "./movieCardSearch/MovieCardSearch";
 
 export {
     Slide,
-    MovieCard
+    MovieCard,
+    MovieCardSearch
 }

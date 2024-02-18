@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import './index.css'
 import MainPage from './pages/MainPage.jsx'
 import MoviePage from './pages/MoviePage.jsx'
+import SearchPage from './pages/SearchPage.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom' 
 
 const router = createBrowserRouter([
@@ -14,6 +15,11 @@ const router = createBrowserRouter([
   {
     path: '/movie/:movieId',
     element: <MoviePage />,
+    errorElement: <div>404 Not Found</div>
+  },
+  {
+    path: '/search',
+    element: <SearchPage />,
     errorElement: <div>404 Not Found</div>
   }
 ])

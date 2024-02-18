@@ -21,7 +21,7 @@ const Presentation = ({ popularMovies, topMovies }) => {
           const response = await fetch(`${urlBase}?api_key=${API_KEY}`);
           const data = await response.json();
           let num = Math.floor(Math.random()
-          * (10 - 0 + 1));
+          * (19 - 0 + 1));
           setMovie(data.results[num]);
         }
         catch(error) {

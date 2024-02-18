@@ -1,10 +1,14 @@
 import React from 'react'
+import { Navbar, Search, Footer } from '../components' 
 
 const SearchPage = () => {
+
   return (
-    <div>
-      
-    </div>
+    <>
+      <Navbar />
+      <Search />
+      <Footer />
+    </>
   )
 }
 

@@ -1,5 +1,5 @@
 .app__card {
-    min-width: 275px;
+    width: 275px;
     height: 420px;
     margin-right: 10px;
     box-shadow: 5px 5px 10px #000;
@@ -59,7 +59,7 @@
 
 @media screen and (max-width: 650px) {
     .app__card{
-        min-width: 200px;
+        width: 200px;
         height: 300px;
     }
 
@@ -80,7 +80,7 @@
 
 @media screen and (max-width: 450px) {
     .app__card{
-        min-width: 170px;
+        width: 170px;
         height: 250px;
     }
 
