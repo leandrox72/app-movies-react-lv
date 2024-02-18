@@ -44,6 +44,7 @@
     font-family: 'Kanit', sans-serif;
     text-transform: uppercase;
     transition: 0.25s ease;
+    cursor: pointer;
 }
 
 .app__search-form button:hover {
