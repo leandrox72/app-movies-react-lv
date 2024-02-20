@@ -4,6 +4,7 @@
     flex-direction: column;
     margin: 10px;
     background: #222;
+    cursor: pointer;
     transition: 0.5s ease;
 }
 
