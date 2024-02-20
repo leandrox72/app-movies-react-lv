@@ -1,40 +1,13 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import './Player.css'
 import YouTube from 'react-youtube';
+import useFetchTrailer from '../../hooks/useFetchTrailer';
+import useFetchById from '../../hooks/useFetchById';
 
 const Player = ({ movieId }) => {
     
-  const API_KEY = import.meta.env.VITE_API_KEY;
-  const [ video, setVideo ] = useState('')
-  const [ movie, setMovie ] = useState('')
-
-  const getMovieTrailer = async () => {
-    const response = await fetch(`https://api.themoviedb.org/3/movie/${movieId}/videos?api_key=${API_KEY}`)
-    const data = await response.json()
-    if (data.results) {
-      const trailer = data.results.find(movie=> {
-        return movie.type === "Trailer"  
-      })
-      setVideo(trailer)
-    }
-  }
-
-  const getMovie = async () => {
-    try{
-        const response = await fetch(`https://api.themoviedb.org/3/movie/${movieId}?&api_key=${API_KEY}`)
-        const data = await response.json()
-        setMovie(data)
-    }
-    catch(error) {
-        console.error('A ocurrido un error: ', error)
-    }
-  }
-
-  useEffect(() => {
-    getMovieTrailer()
-    getMovie()
-  },[])
-
+  const { video } = useFetchTrailer(movieId);
+  const { movie } = useFetchById(movieId)
 
   const opts = {
     height: '100%',

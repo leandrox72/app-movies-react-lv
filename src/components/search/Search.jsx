@@ -44,7 +44,8 @@ const Search = () => {
             </form>
             <div className='app__search-results'>
                 {results?.map((movie) => (
-                    <MovieCardSearch 
+                    <MovieCardSearch
+                        key={movie.id} 
                         title={movie.title} 
                         img={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} 
                         desc={movie.overview}

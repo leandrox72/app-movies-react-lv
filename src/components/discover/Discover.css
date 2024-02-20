@@ -45,6 +45,13 @@
     filter: brightness(50%);
 }
 
+.app__discover-upcoming {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
 @media screen and (max-width: 650px) {
     
     .app__discover h2 {

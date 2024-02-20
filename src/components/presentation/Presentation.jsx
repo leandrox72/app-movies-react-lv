@@ -1,48 +1,39 @@
 import React, { useEffect, useState } from 'react'
-import './Presentation.css'
 import Discover from '../discover/Discover';
 import MainMovie from '../mainMovie/MainMovie';
+import useFetchPopulars from '../../hooks/useFetchPopulars';
+import useFetchTops from '../../hooks/useFetchTops';
+import useFetchRandom from '../../hooks/useFetchRandom';
+import useFetchUpcoming from '../../hooks/useFetchUpcoming';
 
-const Presentation = ({ popularMovies, topMovies }) => {
+const Presentation = () => {
 
+    const { random } = useFetchRandom();
+    const { movies } = useFetchPopulars();
+    const { tops } = useFetchTops();
+    const { upcoming } = useFetchUpcoming();
+
+    // A little bit of non optimal code...
     const [ movie, setMovie ] = useState('');
+    
+    useEffect(() => {
+        setMovie(random)
+    },[random])
 
-    //Pa los componentes hijo, setear la pelicula principal...
     const passMovie = (movie) => {
         setMovie(movie)
     }
 
-    //Alerta de s p a g h e t t i 
-    const urlBase = import.meta.env.VITE_API_URL;
-    const API_KEY = import.meta.env.VITE_API_KEY;
-
-    const getMovies = async () => {
-        try {
-          const response = await fetch(`${urlBase}?api_key=${API_KEY}`);
-          const data = await response.json();
-          let num = Math.floor(Math.random()
-          * (19 - 0 + 1));
-          setMovie(data.results[num]);
-        }
-        catch(error) {
-          console.log('Ha ocurrido un error: ', error)
-        }
-    }
-
-    useEffect(() => {
-        getMovies()
-    },[])
-    
-    //Goofy Ahh codigo
     return (
         <>
             <MainMovie 
                 movie={movie}
             />
             <Discover 
-                popularMovies={popularMovies}
-                topMovies={topMovies}
+                popularMovies={movies}
+                topMovies={tops}
                 passMovie={passMovie}
+                upcomings={upcoming}
             />
         </>
     )

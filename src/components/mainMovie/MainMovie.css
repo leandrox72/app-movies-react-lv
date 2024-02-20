@@ -59,12 +59,11 @@
     transition: 0.5s ease;
 }
 
-.app__presentation-info button,
-.app__presentation-info button:first-child:hover {
+.app__presentation-info button {
     outline: none;
     margin-right: 10px;
-    background: transparent;
     color: #fff;
+    background: transparent;
     font-family: 'Kanit', sans-serif;
     border: 2px solid #fff;
     padding: 8px 30px;
@@ -75,19 +74,14 @@
     margin-top: 10px;
 }
 
-.app__presentation-info button:hover,
-.app__presentation-info button:first-child {
-    border: 2px solid #fff;
-    background: #fff;
-    color: #111;
-}
-
 .app__presentation-info button:hover {
     box-shadow: 5px 5px 10px #000;
+    background: #fff;
+    color: #000;
 }
 
 .app__presentation-info .divisor {
-    max-width: 700px;
+    max-width: 450px;
     width: 100%;
     border-top: 1px solid #fff;
     margin-bottom: 10px;

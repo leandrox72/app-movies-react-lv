@@ -1,6 +1,5 @@
 import React from 'react'
 import './MainMovie.css'
-import { GrFavorite } from "react-icons/gr";
 import { Link } from 'react-router-dom';
 
 const MainMovie = ({ movie }) => {
@@ -15,12 +14,9 @@ const MainMovie = ({ movie }) => {
                 <p>{movie?.release_date} | ★{movie?.vote_average}</p>
                 <div className='divisor'/>
                 <p>{movie?.overview}</p>
-                <div className='app__presentation-btns'>
-                    <Link to={`/movie/${movie.id}`}>
-                        <button type='button'>Ver</button>
-                    </Link> 
-                    <button type='button'>Favoritos</button>
-                </div>
+                <Link to={`/movie/${movie.id}`}>
+                    <button type='button'>Ver</button>
+                </Link> 
             </div>
         </div>
     </div>

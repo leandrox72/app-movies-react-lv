@@ -1,0 +1,95 @@
+.app__card3 {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    background: #222;
+    transition: 0.5s ease;
+}
+
+.app__card3:hover {
+    background: #111;
+}
+
+.app__card3 img {
+    width: 100%;
+}
+
+.app__card3-info {
+    padding: 15px;
+    font-family: 'Kanit', sans-serif;
+    transition: 0.5s ease;
+}
+
+.app__card3-info h3 {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.app__card3-info p {
+    line-height: 20px;
+    font-size: 16px;
+    color: #aaa;
+}
+
+@media screen and (max-width: 1050px) {
+    .app__card3 {
+        width: 280px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .app__card3 {
+        width: 240px;
+    }
+
+    .app__card3-info h3 {
+        font-size: 18px;
+    }
+
+    .app__card3-info p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 650px)  {
+    .app__card3 {
+        width: 165px;
+        margin: 5px;
+    }
+
+    .app__card3-info {
+        padding: 10px;
+    }
+
+    .app__card3-info h3 {
+        font-size: 16px;
+    }
+
+    .app__card3-info p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
+
+@media screen and (max-width: 450px)  {
+    .app__card3 {
+        width: 140px;
+        margin: 5px;
+    }
+
+    .app__card3-info {
+        padding: 10px;
+    }
+
+    .app__card3-info h3 {
+        font-size: 16px;
+    }
+
+    .app__card3-info p {
+        font-size: 12px;
+    }
+}
