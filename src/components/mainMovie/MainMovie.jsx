@@ -15,7 +15,7 @@ const MainMovie = ({ movie }) => {
                 <div className='divisor'/>
                 <p>{movie?.overview}</p>
                 <Link to={`/movie/${movie.id}`}>
-                    <button type='button'>Ver</button>
+                    <button type='button'>Watch</button>
                 </Link> 
             </div>
         </div>
