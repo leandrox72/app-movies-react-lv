@@ -19,10 +19,14 @@ const Navbar = () => {
 
     window.addEventListener('scroll', changeColor)
 
+    const toTheTop = () => {
+      window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+    }
+
     return (
       <div className={color ? 'app__navbar colorChange' : 'app__navbar'}>
         <Link to={'/'}><h2>Movie Center 🍿</h2></Link>
-        <Link to={'/search'}><FaSearch className='app__navbar-icon' type='submit' /></Link>
+        <Link onClick={toTheTop} to={'/search'}><FaSearch className='app__navbar-icon'/></Link>
       </div>
   )
 }

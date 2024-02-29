@@ -1,7 +1,7 @@
 .app__navbar {
     width: 100%;
     display: flex;
-    padding: 1rem 4rem;
+    padding: 0.5rem 4rem;
     justify-content: space-between;
     align-items: center;
     position: fixed;
