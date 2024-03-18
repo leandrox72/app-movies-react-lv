@@ -1,8 +1,8 @@
 .app__card3 {
-    width: 350px;
+    width: auto;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    margin: 10px;
     background: #222;
     cursor: pointer;
     transition: 0.5s ease;
@@ -36,16 +36,7 @@
     color: #aaa;
 }
 
-@media screen and (max-width: 1050px) {
-    .app__card3 {
-        width: 280px;
-    }
-}
-
 @media screen and (max-width: 850px) {
-    .app__card3 {
-        width: 240px;
-    }
 
     .app__card3-info h3 {
         font-size: 18px;
@@ -57,10 +48,6 @@
 }
 
 @media screen and (max-width: 650px)  {
-    .app__card3 {
-        width: 165px;
-        margin: 5px;
-    }
 
     .app__card3-info {
         padding: 10px;
@@ -77,10 +64,6 @@
 }
 
 @media screen and (max-width: 450px)  {
-    .app__card3 {
-        width: 155px;
-        margin: 5px;
-    }
 
     .app__card3-info {
         padding: 10px;

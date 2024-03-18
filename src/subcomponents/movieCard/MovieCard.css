@@ -1,17 +1,17 @@
 .app__card {
-    width: 275px;
-    height: 420px;
-    margin-right: 10px;
+    width: 200px;
+    height: 325px;
     box-shadow: 5px 5px 10px #000;
     cursor: pointer;
     overflow: hidden;
-    
+    margin-bottom: 1rem;
 }
 
 .app__card-img {
     width: 100%;
     height: 100%;
     transition: 0.5s ease;
+    object-fit: cover;
 }
 
 .app__card:hover .app__card-img {
@@ -34,47 +34,58 @@
 }
 
 .app__card:hover .app__card-info {
-    top: -425px;
+    top: -330px;
 }
 
 
 .app__card-info h3 {
     text-transform: uppercase;
-    font-size: 18px;
-    width: fit-content;
+    font-size: 1.25rem;
+    line-height: 1.65rem;
     font-weight: 400;
     margin-bottom: 20px;
     text-wrap: wrap;
-    line-height: 20px;
+    overflow-wrap: break-word;
 }
 
 .app__card-info p {
     text-transform: capitalize;
     font-size: 14px;
+    line-height: 21px;
     font-weight: 300;
     text-wrap: wrap;
-    line-height: 18px;
-    color: #ccc;
+    overflow-wrap: break-word;
+    color: #aaa;
 }
 
-@media screen and (max-width: 650px) {
-    .app__card{
-        width: 200px;
-        height: 300px;
-    }
-
-    .app__card-info h3 {
-        margin-bottom: 10px;
-    }
-
-    .app__card-info p {
-        font-size: 12px;
-        line-height: 16px;
+@media screen and (max-width: 1024px) {
+    .app__card {
+        width: 175px;
+        height: 275px;
+        margin-bottom: 0.5rem;
     }
 
     .app__card:hover .app__card-info {
-        top: -305px;
+        top: -280px;
     }
+
+    .app__card-info h3 {
+        font-size: 1rem;
+        line-height: 1.25em;
+    }
+
+    .app__card-info p {
+        font-size: 0.75rem;
+        line-height: 1.25rem;
+    }
+}
+
+@media screen and (max-width: 640px) {
+
+    .app__card-info h3 {
+        margin-bottom: 0.75rem;
+    }
+
 }
 
 
