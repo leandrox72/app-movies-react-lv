@@ -1,8 +1,7 @@
 import React from 'react'
 import './Player.css'
 import YouTube from 'react-youtube';
-import useFetchTrailer from '../../hooks/useFetchTrailer';
-import useFetchById from '../../hooks/useFetchById';
+import { useFetchById, useFetchTrailer } from '../../hooks';
 
 const Player = ({ movieId }) => {
     

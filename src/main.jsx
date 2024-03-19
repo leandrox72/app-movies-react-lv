@@ -1,10 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
-import MainPage from './pages/MainPage.jsx'
-import MoviePage from './pages/MoviePage.jsx'
-import SearchPage from './pages/SearchPage.jsx'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom' 
+import { MainPage, MoviePage, SearchPage } from './pages/index.js'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+
 const router = createBrowserRouter([
   {
     path:'/',

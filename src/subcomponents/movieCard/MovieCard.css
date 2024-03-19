@@ -1,6 +1,6 @@
 .app__card {
-    width: 200px;
-    height: 325px;
+    width: 250px;
+    height: 375px;
     box-shadow: 5px 5px 10px #000;
     cursor: pointer;
     overflow: hidden;
@@ -34,7 +34,7 @@
 }
 
 .app__card:hover .app__card-info {
-    top: -330px;
+    top: -380px;
 }
 
 
@@ -56,6 +56,17 @@
     text-wrap: wrap;
     overflow-wrap: break-word;
     color: #aaa;
+}
+
+@media screen and (max-width: 1280px) {
+    .app__card {
+        width: 225px;
+        height: 300px;
+    }
+
+    .app__card:hover .app__card-info {
+        top: -305px;
+    }
 }
 
 @media screen and (max-width: 1024px) {

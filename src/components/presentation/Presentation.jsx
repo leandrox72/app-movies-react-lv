@@ -1,10 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Discover from '../discover/Discover';
 import MainMovie from '../mainMovie/MainMovie';
-import useFetchPopulars from '../../hooks/useFetchPopulars';
-import useFetchTops from '../../hooks/useFetchTops';
-import useFetchRandom from '../../hooks/useFetchRandom';
-import useFetchUpcoming from '../../hooks/useFetchUpcoming';
+import { useFetchPopulars,useFetchTops, useFetchRandom, useFetchUpcoming } from '../../hooks'; 
 
 const Presentation = () => {
 

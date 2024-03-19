@@ -17,8 +17,7 @@ export default function useFetchById( movieId ) {
             console.error('A ocurrido un error: ', error)
         }
       }
-  
-    //Llamando a los 2 fetch
+
     useEffect(() => {
         getMovie()
     },[])

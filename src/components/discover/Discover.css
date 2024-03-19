@@ -12,6 +12,8 @@
     text-transform: uppercase;
     font-size: 35px;
     transition: 0.5s ease;
+    margin-bottom: 2rem;
+    line-height: 1.5rem;
 }
 
 .app__discover-row {
