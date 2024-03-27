@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Discover from '../discover/Discover';
 import MainMovie from '../mainMovie/MainMovie';
-import { useFetchRandom, useFetchMovies } from '../../hooks'; 
+import { useFetchMovies, useFetchMovie } from '../../hooks'; 
 
 const Presentation = () => {
 
@@ -9,7 +9,7 @@ const Presentation = () => {
     const urlBase2 = import.meta.env.VITE_API_URL2;
     const API_KEY = import.meta.env.VITE_API_KEY;
 
-    const { random } = useFetchRandom();
+    const random = useFetchMovie(`${urlBase}?api_key=${API_KEY}`, true);
     const movies = useFetchMovies(`${urlBase}?api_key=${API_KEY}`);
     const tops = useFetchMovies(`${urlBase2}/top_rated?api_key=${API_KEY}`);
     const upcoming = useFetchMovies(`${urlBase2}/upcoming?api_key=${API_KEY}`);
@@ -34,7 +34,7 @@ const Presentation = () => {
                 popularMovies={movies}
                 topMovies={tops}
                 passMovie={passMovie}
-                upcomings={upcoming}
+                upcomings={upcoming.slice(0,6)}
             />
         </>
     )

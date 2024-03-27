@@ -1,18 +1,25 @@
 import { useState, useEffect } from "react";
 
-export default function useFetchMovies(url) {
+export default function useFetchMovie(url, random) {
 
-    const [ movies, setMovies ] = useState([])
+    const [ movie, setMovie ] = useState()
     const [ isLoading, setIsLoading ] = useState(false)
     const [ error, setError ] = useState()
 
-    const getMovies = async () => {     
+
+    const getMovie = async () => {   
         setIsLoading(true)
         
         try {
           const response = await fetch(url);
           const data = await response.json();
-          setMovies(data.results);
+          if (random === true) {
+            let num = Math.floor(Math.random()*(19 - 0 + 1));
+            setMovie(data.results[num]);
+          }
+          else {
+            setMovie(data)
+          }
         }
         catch(error) {
           setError(error)
@@ -31,8 +38,8 @@ export default function useFetchMovies(url) {
     }
 
     useEffect(() => {
-        getMovies()
+        getMovie()
     },[])
 
-    return movies 
+    return movie
 }
