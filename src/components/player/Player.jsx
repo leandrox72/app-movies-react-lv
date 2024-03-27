@@ -34,7 +34,7 @@ const Player = ({ movieId }) => {
         <div>
           <h2><span>{movie?.title}</span> | ★ {movie?.vote_average}</h2>
           <h3>Playing | {video?.name}</h3>
-          <p>Release Date | {movie?.release_date}</p>
+          <p>Release Year | {movie?.release_date?.slice(0,4)}</p>
           <p>{movie?.overview}</p>
         </div>
       </div>

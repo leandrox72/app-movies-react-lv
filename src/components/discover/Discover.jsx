@@ -10,7 +10,7 @@ const Discover = ({ popularMovies, topMovies, passMovie, upcomings }) => {
 
     return (
         <div className='app__discover section__padding'>
-            <h2>trending</h2>
+            <h2 className='section__h2'>trending</h2>
             <div className='app__discover-row'>
                 {popularMovies?.map((movie) => (
                     <div key={movie.id} onClick={() => {
@@ -25,7 +25,7 @@ const Discover = ({ popularMovies, topMovies, passMovie, upcomings }) => {
                     </div>
                 ))}
             </div>
-            <h2>top rated</h2>
+            <h2 className='section__h2'>top rated</h2>
             <div className='app__discover-row'>
                 {topMovies?.map((movie) => (
                     <div key={movie.id} onClick={() => {
@@ -40,7 +40,7 @@ const Discover = ({ popularMovies, topMovies, passMovie, upcomings }) => {
                     </div>
                 ))}
             </div>
-            <h2>upcoming</h2>
+            <h2 className='section__h2'>upcoming</h2>
             <div className='app__discover-upcoming'>
                 {upcomings?.map((movie)=> (
                     <div key={movie.id} onClick={() => {

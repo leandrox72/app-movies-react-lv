@@ -48,7 +48,6 @@
     text-transform: uppercase;
     margin-bottom: 10px;
     line-height: 40px;
-    transition: 0.5s ease;
 }
 
 .app__presentation-info p {
@@ -56,29 +55,27 @@
     font-weight: 300;
     color: #fff;
     max-width: 450px;
-    margin-bottom: 10px;
     font-size: 1rem;
     line-height: 1.5rem;
-    transition: 0.5s ease;
+    margin-bottom: .5rem;   
 }
 
 .app__presentation-info .movie__desc {
     color: #aaa;
+    margin-bottom: 1rem;
 }
 
 .app__presentation-info button {
     outline: none;
-    margin-right: 10px;
     color: #fff;
     background: transparent;
     font-family: 'Kanit', sans-serif;
     border: 2px solid #fff;
-    padding: 8px 30px;
+    padding: .5rem 1.5rem;
     font-size: 14px;
     cursor: pointer;
     text-transform: uppercase;
     transition: 0.25s ease;
-    margin-top: 10px;
 }
 
 .app__presentation-info button:hover {
@@ -94,17 +91,6 @@
     margin-bottom: 10px;
 }
 
-.app__presentation-btns {
-    display: flex;
-    align-items: center;
-}
-
-.app__presentation-btns .icon {
-    height: 30px;
-    width: 30px;
-    color: #fff;
-}
-
 @media screen and (max-width:850px) {
     
     .app__presentation-content{
@@ -113,11 +99,13 @@
     }
     
     .app__presentation-info h2 {
-        font-size: 30px;
+        font-size: 2rem;
+        line-height: 2.2rem;
     }
 
     .app__presentation-info p {
-        font-size: 15px;
+        font-size: .9rem;
+        line-height: 1.4rem;
     }
 
     .app__presentation-content img {
@@ -132,11 +120,13 @@
     }
 
     .app__presentation-info h2 {
-        font-size: 25px;
+        font-size: 1.5rem;
+        line-height: 1.7rem;
     }
 
     .app__presentation-info p {
-        font-size: 14px;
+        font-size: .8rem;
+        line-height: 1.3rem;
     }
 }
 
