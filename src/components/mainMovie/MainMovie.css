@@ -1,4 +1,4 @@
-.app__presentation {
+.app__hero {
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -19,13 +19,13 @@
     width: 100%;
 }
 
-.app__presentation-content {
+.app__hero-content {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.app__presentation-content img {
+.app__hero-content img {
     z-index: 300;
     max-width: 250px;
     box-shadow: 10px 10px 15px #000;
@@ -33,13 +33,13 @@
     max-height: 375px;
 }
 
-.app__presentation-info {
+.app__hero-info {
     z-index: 300;
     display: flex;
     flex-direction: column;
 }
 
-.app__presentation-info h2 {
+.app__hero-info h2 {
     font-family: 'Kanit', sans-serif;
     font-weight: 400;
     color: #fff;
@@ -50,7 +50,7 @@
     line-height: 40px;
 }
 
-.app__presentation-info p {
+.app__hero-info p {
     font-family: 'Kanit', sans-serif;
     font-weight: 300;
     color: #fff;
@@ -60,12 +60,12 @@
     margin-bottom: .5rem;   
 }
 
-.app__presentation-info .movie__desc {
+.app__hero-info .movie__desc {
     color: #aaa;
     margin-bottom: 1rem;
 }
 
-.app__presentation-info button {
+.app__hero-info button {
     outline: none;
     color: #fff;
     background: transparent;
@@ -78,13 +78,13 @@
     transition: 0.25s ease;
 }
 
-.app__presentation-info button:hover {
+.app__hero-info button:hover {
     box-shadow: 5px 5px 10px #000;
     background: #fff;
     color: #000;
 }
 
-.app__presentation-info .divisor {
+.app__hero-info .divisor {
     max-width: 450px;
     width: 100%;
     border-top: 1px solid #fff;
@@ -93,45 +93,45 @@
 
 @media screen and (max-width:850px) {
     
-    .app__presentation-content{
+    .app__hero-content{
         flex-direction: column;
         align-items: flex-start;
     }
     
-    .app__presentation-info h2 {
+    .app__hero-info h2 {
         font-size: 2rem;
         line-height: 2.2rem;
     }
 
-    .app__presentation-info p {
+    .app__hero-info p {
         font-size: .9rem;
         line-height: 1.4rem;
     }
 
-    .app__presentation-content img {
+    .app__hero-content img {
         max-width: 220px;
         margin-bottom: 30px;
     }
 }
 
 @media screen and (max-width:650px) {
-    .app__presentation-content img {
+    .app__hero-content img {
         max-width: 180px;
     }
 
-    .app__presentation-info h2 {
+    .app__hero-info h2 {
         font-size: 1.5rem;
         line-height: 1.7rem;
     }
 
-    .app__presentation-info p {
+    .app__hero-info p {
         font-size: .8rem;
         line-height: 1.3rem;
     }
 }
 
 @media screen and (max-width:450px) {
-    .app__presentation-content img {
+    .app__hero-content img {
         max-width: 150px;
     }
 }

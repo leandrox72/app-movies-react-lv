@@ -1,5 +1,5 @@
 import Navbar from "./navbar/Navbar";
-import Presentation from "./presentation/Presentation";
+import Hero from "./hero/Hero";
 import Footer from "./footer/Footer";
 import Player from "./player/Player";
 import Discover from "./discover/Discover";
@@ -8,7 +8,7 @@ import Search from "./search/Search";
 
 export {
     Navbar,
-    Presentation,
+    Hero,
     Footer,
     Player,
     Discover,

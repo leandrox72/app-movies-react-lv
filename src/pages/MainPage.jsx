@@ -1,12 +1,12 @@
 import React from 'react'
-import { Navbar, Presentation, Footer } from '../components' 
+import { Navbar, Hero, Footer } from '../components' 
 
 const MainPage = () => {
 
   return (
     <>
         <Navbar />
-        <Presentation />
+        <Hero />
         <Footer />
     </>
   )

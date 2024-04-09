@@ -1,7 +1,7 @@
 import React from 'react'
 import './Player.css'
 import YouTube from 'react-youtube';
-import { useFetchTrailer, useFetchMovie } from '../../hooks';
+import { useFetchTrailer, useFetchMovies } from '../../hooks';
 
 const Player = ({ movieId }) => {
   
@@ -9,7 +9,7 @@ const Player = ({ movieId }) => {
   const API_KEY = import.meta.env.VITE_API_KEY;
 
   const { video } = useFetchTrailer(movieId);
-  const movie = useFetchMovie(`${urlBase2}/${movieId}?&api_key=${API_KEY}`);
+  const movie = useFetchMovies(`${urlBase2}/${movieId}?&api_key=${API_KEY}`, true);
 
   const opts = {
     height: '100%',
