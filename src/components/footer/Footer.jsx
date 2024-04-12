@@ -10,7 +10,7 @@ const Footer = () => {
           <ul key={ul.id}>
             <h4>{ul.title}</h4>
             {ul.li?.map((li) => (
-              <li className='section__P' key={li}>{li}</li>
+              <li className='section__p' key={li}>{li}</li>
             ))}
           </ul>
         ))}
