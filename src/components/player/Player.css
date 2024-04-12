@@ -60,12 +60,8 @@
 }
 
 .app__player-data p {
-    font-size: 1rem;
-    line-height: 1.5rem;
     color: #ccc;
-    font-weight: 200;
     margin-bottom: 10px;
-    
 }
 
 .app__player-data p:last-child {
@@ -74,13 +70,13 @@
 }
 
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 764px) {
     .app__player-container {
         height: 55vh;
     }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 640px) {
     
     .app__player-container {
         margin-top: 4rem;
@@ -102,9 +98,5 @@
 
     .app__player-data h3 {
         font-size: 20px;
-    }
-
-    .app__player-data p {
-        font-size: 14px;
     }
 }

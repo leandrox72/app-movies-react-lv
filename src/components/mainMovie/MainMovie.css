@@ -51,12 +51,8 @@
 }
 
 .app__hero-info p {
-    font-family: 'Kanit', sans-serif;
-    font-weight: 300;
     color: #fff;
     max-width: 450px;
-    font-size: 1rem;
-    line-height: 1.5rem;
     margin-bottom: .5rem;   
 }
 
@@ -65,20 +61,22 @@
     margin-bottom: 1rem;
 }
 
-.app__hero-info button {
+.app__hero-info .app__hero-btn {
     outline: none;
     color: #fff;
+    border-radius: 25px;
     background: transparent;
     font-family: 'Kanit', sans-serif;
     border: 2px solid #fff;
-    padding: .5rem 1.5rem;
+    padding: .35rem 1.35rem;
     font-size: 14px;
     cursor: pointer;
     text-transform: uppercase;
     transition: 0.25s ease;
+    width: fit-content;
 }
 
-.app__hero-info button:hover {
+.app__hero-info .app__hero-btn:hover {
     box-shadow: 5px 5px 10px #000;
     background: #fff;
     color: #000;
@@ -114,7 +112,7 @@
     }
 }
 
-@media screen and (max-width:650px) {
+@media screen and (max-width:640px) {
     .app__hero-content img {
         max-width: 180px;
     }

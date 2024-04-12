@@ -22,7 +22,6 @@ const Hero = () => {
     
     useEffect(() => {
         setMovie(movies[0])
-        console.log('poronga')
     },[movies])
 
     const passMovie = (movie) => {

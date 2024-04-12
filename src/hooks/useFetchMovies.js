@@ -27,10 +27,6 @@ export default function useFetchMovies(url, single) {
         }
     }
     
-    if (isLoading) {
-      console.log("loading...")
-    }
-
     if (error) {
       console.log("ocurrio un error: ", error)
     }

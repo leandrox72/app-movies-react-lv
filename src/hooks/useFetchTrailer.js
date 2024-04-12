@@ -31,10 +31,6 @@ export default function useFetchTrailer( movieId ) {
         }
     }
 
-    if (isLoading) {
-        console.log("loading...")    
-    }
-  
     if (error) {
       console.log("ocurrio un error: ", error)
     }

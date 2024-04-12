@@ -1,16 +1,19 @@
 import React from 'react'
 import './Footer.css'
-import { BsInstagram, BsTwitterX, BsLinkedin } from "react-icons/bs";
+import { footerData } from '../../contants/data';
 
 const Footer = () => {
   return (
     <div className='app__footer section__padding'>
-      <p>Powered by TheMovieDB</p>
-      <div className='divisor'/>
-      <div className='app__footer-icons'>
-        <BsInstagram className='info-icon' />
-        <BsTwitterX className='info-icon' />
-        <BsLinkedin className='info-icon' />
+      <div className='app__footer-cont'>
+        {footerData.map((ul) => (
+          <ul key={ul.id}>
+            <h4>{ul.title}</h4>
+            {ul.li?.map((li) => (
+              <li className='section__P' key={li}>{li}</li>
+            ))}
+          </ul>
+        ))}
       </div>
     </div>
   )
